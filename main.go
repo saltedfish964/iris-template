@@ -7,6 +7,7 @@ import (
 
 func main() {
 	app := iris.New()
+	app.Use(iris.Compression)
 
 	router.Init(app)
 
